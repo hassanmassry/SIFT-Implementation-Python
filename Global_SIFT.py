@@ -224,7 +224,7 @@ for p in new_interestedpoint:
         desc[d]/=s
         if desc[d]>.2:
             desc[d]=0
-    print(desc)
+#     print(desc)
     s=sum(desc)
     for d in range(128):
         desc[d]/=s
