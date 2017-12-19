@@ -193,7 +193,7 @@ for p in new_interestedpoint:
     r_w=r[x-13:x+13,y-13:y+13]
     m_w=m[x-13:x+13,y-13:y+13]
 
-    print(angle)
+#     print(angle)
     if angle!=0:
         r_w=skimage.transform.rotate(r_w,angle*10)
         m_w=skimage.transform.rotate(m_w,angle*10)
