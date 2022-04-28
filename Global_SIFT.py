@@ -30,7 +30,7 @@ def neighbour(octave,l,x,y):
                img[ x + 1, y + 1],
                img[ x + 1, y - 1],
                img[ x - 1, y + 1],
-               img[ x + 1, y - 1]]
+               img[ x - 1, y - 1]]
     if l != 0:
         prev=octave[l-1]
         neighbour+=[
@@ -42,7 +42,7 @@ def neighbour(octave,l,x,y):
         prev[ x + 1, y + 1],
         prev[ x + 1, y - 1],
         prev[ x - 1, y + 1],
-        prev[ x + 1, y - 1]  ]
+        prev[ x - 1, y - 1]  ]
     if l !=3:
         next=octave[l+1]
         neighbour+=[
@@ -54,7 +54,7 @@ def neighbour(octave,l,x,y):
         next[ x + 1, y + 1],
         next[ x + 1, y - 1],
         next[ x - 1, y + 1],
-        next[ x + 1, y - 1]]
+        next[ x - 1, y - 1]]
     return neighbour
 def detect(oct1,oct_num):
     interestedpoint=[]
