@@ -81,7 +81,7 @@ def gaussian(mm,nn,sigma):
     g = np.zeros((2*m+1, 2*n+1))
     for x in range(-m,m):
         for y in range(-n,n):
-            g[x+m,y+n]=np.exp((-x**2-y**2)/(2*sigma**2))/(2*np.pi*sigma)
+            g[x+m,y+n]=np.exp((-x**2-y**2)/(2*sigma**2))/(2*np.pi*sigma**2)
     return g[:mm,:nn]
 img=skimage.io.imread('img.png')
 img=skimage.color.rgb2gray(img)
